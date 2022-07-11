@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "b2ad22a0-0613-4743-853f-a5ed2b8a2d9e": {
+      "ProjectGuid": "b2ad22a0-0613-4743-853f-a5ed2b8a2d9e",
+      "DisplayName": "WeatherInformation.API",
+      "ColorIndex": 0
+    },
+    "9e5ecdde-5d74-4fad-bbda-74e57ec2cfe6": {
+      "ProjectGuid": "9e5ecdde-5d74-4fad-bbda-74e57ec2cfe6",
+      "DisplayName": "WeatherInformation.Domain",
+      "ColorIndex": 1
+    },
+    "e31c881c-84c6-42d6-a72c-68e3cd90042a": {
+      "ProjectGuid": "e31c881c-84c6-42d6-a72c-68e3cd90042a",
+      "DisplayName": "WeatherInformation.UnitTests",
+      "ColorIndex": 2
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Arquivos Diversos",
+      "ColorIndex": -1
+    },
+    "a32518ef-687a-4c5f-88ba-0bff6b7b0684": {
+      "ProjectGuid": "a32518ef-687a-4c5f-88ba-0bff6b7b0684",
+      "DisplayName": "WeatherInformation.Application",
+      "ColorIndex": 3
+    },
+    "8b770739-39c0-4647-9450-df5111c5c7a9": {
+      "ProjectGuid": "8b770739-39c0-4647-9450-df5111c5c7a9",
+      "DisplayName": "WeatherInformation.Infrastructure",
+      "ColorIndex": 4
+    },
+    "a261c4d5-96ae-4933-b17b-3697d78c223e": {
+      "ProjectGuid": "a261c4d5-96ae-4933-b17b-3697d78c223e",
+      "DisplayName": "WeatherInformation.Infrastructure.IoC",
+      "ColorIndex": 5
+    }
+  },
+  "NextColorIndex": 6
+}
