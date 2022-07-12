@@ -31,7 +31,7 @@ namespace WeatherInformation.Application.Services
         public async Task<IEnumerable<string>> GetDataByDeviceAndDay(GetDataForDeviceRequestDto request)
         {
             var filesResult = new List<string>();
-            var tasks = new List<Task>;
+            var tasks = new List<Task>();
 
             foreach (var sensorType in Enum.GetValues(typeof(SensorType)))
             {
