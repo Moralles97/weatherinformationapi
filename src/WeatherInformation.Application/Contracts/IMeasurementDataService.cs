@@ -4,7 +4,8 @@ namespace WeatherInformation.Application.Contracts
 {
     public interface IMeasurementDataService
     {
-        Task<string> GetDataByDeviceSensorTypeAndDay(GetDataRequestDto request);
-        Task<IEnumerable<string>> GetDataByDeviceAndDay(GetDataForDeviceRequestDto request);
+        Task<Stream?> GetDataByDeviceSensorTypeAndDayAsync(GetDataRequestDto request);
+        Task<Stream?> GetCompressedDataByDeviceAndSensorTypeAsync(GetCompressedDataRequestDto request);
+        Task<Stream> GetDataByDeviceAndDayAsync(GetDataForDeviceRequestDto request);
     }
 }

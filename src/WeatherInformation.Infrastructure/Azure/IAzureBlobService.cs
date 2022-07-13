@@ -2,6 +2,6 @@
 {
     public interface IAzureBlobService
     {
-        Task<string> GetItemFromBlobAsync(string containerName, string filePath);
+        Task<Stream?> GetItemFromBlobAsync(string containerName, string filePath);
     }
 }

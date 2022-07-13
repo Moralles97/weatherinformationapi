@@ -35,7 +35,12 @@
       "ProjectGuid": "a261c4d5-96ae-4933-b17b-3697d78c223e",
       "DisplayName": "WeatherInformation.Infrastructure.IoC",
       "ColorIndex": 5
+    },
+    "f5787799-8c60-42a8-8828-d8f5fdf5c269": {
+      "ProjectGuid": "f5787799-8c60-42a8-8828-d8f5fdf5c269",
+      "DisplayName": "WeatherInformation.UnitTests",
+      "ColorIndex": 6
     }
   },
-  "NextColorIndex": 6
+  "NextColorIndex": 7
 }

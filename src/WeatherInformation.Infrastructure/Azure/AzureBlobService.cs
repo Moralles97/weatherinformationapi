@@ -1,4 +1,5 @@
 ﻿using Microsoft.WindowsAzure.Storage;
+using Serilog;
 
 namespace WeatherInformation.Infrastructure.Azure
 {
@@ -11,7 +12,7 @@ namespace WeatherInformation.Infrastructure.Azure
             _cloudStorageAccount = cloudStorageAccount;
         }
 
-        public async Task<string> GetItemFromBlobAsync(string containerName, string filePath)
+        public async Task<Stream?> GetItemFromBlobAsync(string containerName, string filePath)
         {
             var container = _cloudStorageAccount.CreateCloudBlobClient()
                                                 .GetContainerReference(containerName);
@@ -20,18 +21,14 @@ namespace WeatherInformation.Infrastructure.Azure
             
             if (await blob.ExistsAsync())
             {
-                using var stream = new MemoryStream();
+                Log.Information($"Requested container: {containerName} and file path: {filePath} found.");
 
-                await blob.DownloadToStreamAsync(stream).ConfigureAwait(false);
-               
-                stream.Position = 0;
-                
-                using var streamReader = new StreamReader(stream);
-                
-                return await streamReader.ReadToEndAsync();
+                return await blob.OpenReadAsync();
             }
 
-            return string.Empty;
+            Log.Information($"Requested container or file path does not exist on storage.");
+
+            return null;
         }
     }
 }
